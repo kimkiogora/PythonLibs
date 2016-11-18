@@ -75,7 +75,7 @@ class Connector:
                 res = self.conn_cur.fetchall()
             else:
                 res = self.conn_cur.fetchone()
-            data['data'] = res[0]
+            data['data'] = res
             data['status'] = 'OK'
             self.conn_cur.close()
         except:
